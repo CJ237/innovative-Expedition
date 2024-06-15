@@ -1,0 +1,249 @@
+header {
+  width: 100%;
+  height: 70px;
+  color:antiquewhite;
+}
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: #292727;
+}
+h1{
+  font-size: 60px;
+}
+main{
+  margin-top: 100px;
+  width: 100%;
+  height: 100%; 
+  
+}
+nav {
+  font-size: 20px;
+  background-color: cadetblue;
+  height: 70px;
+  
+}
+nav ul{
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top:25px;
+}
+nav li a{
+  padding: 10px;
+  
+}
+
+nav a:hover {
+  padding-bottom: 10%;
+  border-bottom: 3px solid rgb(206, 100, 100);
+  color: rgb(206, 100, 100);
+  font-weight: 900;
+}
+.none{
+ list-style-type: none;
+ text-decoration: none;
+ color:antiquewhite;
+}
+
+#introduction {
+  text-align: center;
+  color:#292727;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  background-color: antiquewhite;
+  height: 100px;
+
+}
+#introduction img{
+  width:60px;
+  height: 60px;
+  
+}
+.rows{
+  display: flex;
+  flex-wrap: wrap;
+}
+.side{
+  font-size: 50px;
+  height: 100%;
+  padding: 20px;
+  margin-top: 50px;
+  
+}
+.main{
+  flex:60%;
+  flex-direction: row;
+  height: 100%;
+  margin-top: 50px;
+  padding:20px;
+
+}
+.aboutme{
+  width: 100%;
+  height: 100px;
+  background-color:antiquewhite;
+  font-size: 20px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.aboutme p{
+  padding:20px;
+}
+.contactme{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.about{
+  width: 100%;
+  height: 100px;
+  color: antiquewhite;
+  text-align: end;
+  border-right:7px solid antiquewhite;
+  padding-right:5px;
+}
+.work{
+  text-align: end;
+  height: 1150px;
+  width: 100%;
+  color: antiquewhite;
+  border-right:7px solid antiquewhite;
+  padding-right:5px;
+}
+.contact{
+  text-align: end;
+  width: 100%;
+  height: 50px;
+  color: antiquewhite;
+  border-right:7px solid antiquewhite;
+  padding-right:5px;
+}
+.space{
+  margin:20px;
+}
+
+.innerBox1{
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+
+.fourSmallProjects{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+}
+.firstProject{
+  background-image: url("../images/luca-bravo-XJXWbfSo2f0-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  border-radius: 10px;
+  font-weight: 800;
+}
+
+.secondProject{
+  width: 45%;
+  height: 200px;
+  font-weight: 800;
+  background-image: url("../images/domenico-loia-hGV2TfOh0ns-unsplash\ \(1\).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.thirdProject{
+  width: 45%;
+  height: 200px;
+  background-image: url("../images/ux-indonesia-qC2n6RQU4Vw-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  font-weight: 800;
+}
+.fourthProject{
+  width: 45%;
+  height: 200px;
+  background-image: url("../images/nathan-da-silva-FO7kUmBYVi0-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-weight: 800;
+}
+.fifthProject{
+  width: 45%;
+  height: 200px;
+  margin-top: 20px;
+  background-image: url("../images/eftakher-alam-i1VQZsU86ok-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  font-weight: 800;
+}
+.firstProject a {
+  list-style-type: none;
+  text-decoration: none;
+  color:antiquewhite;
+  font-size: 30px;
+}
+.secondProject a {
+  list-style-type: none;
+  text-decoration: none;
+  color:antiquewhite;
+  font-size: 30px;
+}
+.thirdProject a {
+  list-style-type: none;
+  text-decoration: none;
+  color:antiquewhite;
+  font-size: 30px;
+}
+.fourthProject a {
+  list-style-type: none;
+  text-decoration: none;
+  color:antiquewhite;
+  font-size: 30px;
+}
+.fifthProject a {
+  list-style-type: none;
+  text-decoration: none;
+  color:antiquewhite;
+  font-size: 30px;
+}
+
+.firstProject a:hover{
+  color: rgb(13, 201, 185);
+}
+.secondProject a:hover{
+  color: rgb(13, 201, 185);
+}
+.thirdProject a:hover{
+  color: rgb(13, 201, 185);
+
+}
+.fourthProject a:hover{
+  color: rgb(13, 201, 185);
+}
+.fifthProject a:hover{
+  color: rgb(13, 201, 185);
+}
+
+.comingSoon{
+  font-size: 200px;
+  text-align: center;
+  color:rgb(206, 100, 100);
+}
+footer{
+  background-color: antiquewhite;
+  height: 100px;
+  color:#292727;
+}

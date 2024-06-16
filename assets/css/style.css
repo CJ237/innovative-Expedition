@@ -5,26 +5,27 @@ header {
 }
 body {
   font-family:Arial, Helvetica, sans-serif;
-  background-color: #292727;
+  
 }
 h1{
   font-size: 60px;
 }
-main{
-  margin-top: 100px;
-  width: 100%;
-  height: 100%; 
-  
+h2{
+  text-align: center;
+  font-size: 50px;
+  padding-bottom:10px;
+  color:antiquewhite;
 }
+
 nav {
   font-size: 20px;
   background-color: cadetblue;
   height: 70px;
-  
+
 }
 nav ul{
   display: flex;
-  justify-content: end;
+  justify-content: start;
   flex-direction: row;
   flex-wrap: wrap;
   padding-top:25px;
@@ -54,76 +55,54 @@ nav a:hover {
   justify-content:center;
   background-color: antiquewhite;
   height: 100px;
-
+  width: 100%; 
 }
 #introduction img{
   width:60px;
   height: 60px;
-  
 }
 .rows{
   display: flex;
-  flex-wrap: wrap;
+  background-color: #292727;
 }
-.side{
-  font-size: 50px;
-  height: 100%;
-  padding: 20px;
-  margin-top: 50px;
-  
-}
+
 .main{
   flex:60%;
   flex-direction: row;
   height: 100%;
   margin-top: 50px;
   padding:20px;
-
 }
-.aboutme{
-  width: 100%;
+
+.aboutme {
+  width: 50%;
   height: 100px;
   background-color:antiquewhite;
   font-size: 20px;
   border-radius: 10px;
   padding-left: 10px;
+  margin: 0 auto;
 }
+
 .aboutme p{
   padding:20px;
 }
+
 .contactme{
   display: flex;
-  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
   height: 50px;
   background-color: antiquewhite;
   border-radius: 10px;
   font-size: 20px;
+  color:#292727;
+  margin: 0 auto;
 }
 
-.about{
-  width: 100%;
-  height: 100px;
-  color: antiquewhite;
-  text-align: end;
-  border-right:7px solid antiquewhite;
-  padding-right:5px;
-}
-.work{
-  text-align: end;
-  height: 1150px;
-  width: 100%;
-  color: antiquewhite;
-  border-right:7px solid antiquewhite;
-  padding-right:5px;
-}
-.contact{
-  text-align: end;
-  width: 100%;
-  height: 50px;
-  color: antiquewhite;
-  border-right:7px solid antiquewhite;
-  padding-right:5px;
-}
+
 .space{
   margin:20px;
 }
@@ -138,21 +117,21 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
- 
+  justify-content: space-around;
 }
 .firstProject{
   background-image: url("../images/luca-bravo-XJXWbfSo2f0-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  width: 50%;
   height: 700px;
   border-radius: 10px;
   font-weight: 800;
+  margin: 0 auto;
 }
 
 .secondProject{
-  width: 45%;
+  width: 35%;
   height: 200px;
   font-weight: 800;
   background-image: url("../images/domenico-loia-hGV2TfOh0ns-unsplash\ \(1\).jpg");
@@ -161,7 +140,7 @@ nav a:hover {
   border-radius: 10px;
 }
 .thirdProject{
-  width: 45%;
+  width: 35%;
   height: 200px;
   background-image: url("../images/ux-indonesia-qC2n6RQU4Vw-unsplash.jpg");
   background-repeat: no-repeat;
@@ -170,7 +149,7 @@ nav a:hover {
   font-weight: 800;
 }
 .fourthProject{
-  width: 45%;
+  width: 35%;
   height: 200px;
   background-image: url("../images/nathan-da-silva-FO7kUmBYVi0-unsplash.jpg");
   background-repeat: no-repeat;
@@ -180,7 +159,7 @@ nav a:hover {
   font-weight: 800;
 }
 .fifthProject{
-  width: 45%;
+  width: 35%;
   height: 200px;
   margin-top: 20px;
   background-image: url("../images/eftakher-alam-i1VQZsU86ok-unsplash.jpg");
@@ -246,4 +225,163 @@ footer{
   background-color: antiquewhite;
   height: 100px;
   color:#292727;
+}
+@media screen and (max-width: 992px) {
+  
+  .aboutme{
+    width: 80%;
+    font-size: 25px;
+    margin:0 auto;
+    font: size 18px;
+    height: 170px;
+   }
+   .firstProject{
+    width: 80%;
+   }
+   .fourSmallProjects{
+    flex-direction: column;
+   }
+   .secondProject{
+    width: 80%;
+    margin: 0 auto;
+   }
+   .thirdProject{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+   }
+   .fourthProject{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+   }
+   .fifthProject{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+   }
+   .secondProject a{
+    
+    font-size: 30px;
+   }
+   .thirdProject a{
+    font-size: 30px;
+   }
+   .fourthProject a{
+    font-size: 30px;
+   }
+   .fifthProject a{
+    font-size: 30px;
+   }
+   .contactme{
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-around;
+   
+    height: 100px;
+   }
+   .contactme a{
+    font-size: 20px;
+   }
+
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+
+ .aboutme{
+  width: 75%;
+  font-size: 15px;
+ }
+ .contactme{
+  font-size: 15px;
+  width:100%;
+ }
+ .firstProject{
+  width: 75%;
+  height: 400px;
+ }
+ .secondProject a{
+  font-size: 25px;
+ }
+ .thirdProject a{
+  font-size: 25px;
+ }
+ .fourthProject a{
+  font-size: 25px;
+ }
+ .fifthProject a{
+  font-size: 25px;
+ }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+  h1{
+    font-size: 40px;
+  }
+  h2{
+    font-size:30px;
+    padding-right: 20px;
+  }
+  nav ul{
+    display: flex;
+    justify-content: center;
+  }
+  .aboutme{
+    width: 80%;
+    font-size: 15px;
+    margin:30px;
+    font-size:15px;
+    height: 170px;
+   }
+   .firstProject{
+    width: 80%;
+    margin:30px;
+    
+   }
+   .firstProject a{
+    font-size: 20px;
+
+   }
+   .fourSmallProjects{
+    flex-direction: column;
+   }
+   .secondProject{
+    width: 80%;
+    margin:30px;
+   }
+   .thirdProject{
+    width: 80%;
+    margin:30px;
+   }
+   .fourthProject{
+    width: 80%;
+    margin:30px;
+   }
+   .fifthProject{
+    width: 80%;
+    margin:30px;
+   }
+   .secondProject a{
+    
+    font-size: 20px;
+   }
+   .thirdProject a{
+    font-size: 20px;
+   }
+   .fourthProject a{
+    font-size: 20px;
+   }
+   .fifthProject a{
+    font-size: 20px;
+   }
+   .contactme{
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-around;
+    margin:30px;
+    height: 100px;
+   }
+  
 }
